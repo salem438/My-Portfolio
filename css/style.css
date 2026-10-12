@@ -657,26 +657,30 @@ header .links .logo,
    .hero .div_img{
     width: 75%;
    }
-   .about .div_Text h2{
-    font-size: 30px;
-   }
-    .about .div_Text h4{
-        font-size: 28px;
-    }
-     .about .div_Text p{
-        font-size: 14px;
-     }
-      .about .div_Text ul li{
-        width: 100%;
-        font-size: 14px;
-      }
-      .about .div_img{
-        width: 85%;
-      }
-      .top_section h2{
-        font-size: 22px;
-
-      }
+    /* ---- about ---- */
+    .about .container {
+         padding: 30px 20px;
+         }
+    .about .div_text h2 {
+         font-size: 30px; 
+        }
+    .about .div_text h4 {
+         font-size: 22px; 
+        }
+    .about .div_text p  {
+         font-size: 14px;
+         }
+    .about .div_text p br {
+         display: none; 
+        }
+    .about .div_text ul li {
+         width: 100%;
+          font-size: 14px; 
+          margin-bottom: 18px; 
+        }
+    .about .div_img {
+         width: 80%; 
+        }
       .services .boxs .box{
         width: 100%;
       }
