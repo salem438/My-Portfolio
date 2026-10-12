@@ -26,7 +26,11 @@
     <header>
         <nav class="container">
             <a href="#" class="logo"><img src="img/logo.jpg" alt=""></a>
-            <div class="links">
+            <div class="links" id="links">
+                <span class="close_menu" onclick="open_close_Menu()"><i class="fa-solid fa-xmark"></i></span>
+                <a href="#" class="logo"><img src="img/logo.jpg" alt=""></a>
+
+
                 <a href="#home" class="active">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
@@ -37,6 +41,9 @@
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <span class="icon_menu" onclick="open_close_Menu()"><i class="fa-solid fa-bars"></i>
+                </span>
+
 
             </div>
         </nav>
@@ -48,13 +55,12 @@
                 <h4>Hello,i'm</h4>
                 <h1><span>Mohamed Salem</span></h1>
                 <h2>Web Designer</h2>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                     Minus exercitationem vel est quas nemo dolorem doloribus <br>
-                      rem fugit voluptate. Labore!</P>
+                <P>I  love coding,learning building real things that work, <br>
+                exploring new tech.</P>
 
                       <div class="btns">
                         <a href="#" class="btn">hire me</a>
-                        <a href="#" class="btn_no_bg">Download Resume</a>
+                        <a href="img/cv1.pdf" class="btn_no_bg" download="">Download Resume</a>
                       </div>
             </div>
 
@@ -71,9 +77,11 @@
                 <h5>about me</h5>
                 <h2><span>I'm Developer</span></h2>
                 <h4>I Developer Application that Help People</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
-                     Atque molestiae sint velit sed nisi architecto saepe, <br>
-                      harum ipsa officia facilis fugit recusandae a quod in.</p>
+                <p>I am a passionate frontend Engineer with experience in creating dynamic <br>
+                and responsive website.specialize in front-end development using React , <br>
+            and I am always eager to learn new technologies and improve my skills. <br>
+        My goal is to build user-friendly and visually appealing web application <br>
+    that provide an excellent user experience.</p>
 
                       <ul>
                         <li><i class="fa-solid fa-check"></i>Web Development</li>
@@ -108,14 +116,14 @@
                 </div>
                   <div class="box">
                     <i class="fa-solid fa-rocket"></i>
-                    <h3>Web Design</h3>
+                    <h3>Graphic Design</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                          Quibusdam, repellendus.</p>
                          <a href="#" class="btn">Read More</a>
                 </div>
                   <div class="box">
                     <i class="fa-solid fa-code"></i>
-                    <h3>Web Design</h3>
+                    <h3>Digital Markting</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
                          Quibusdam, repellendus.</p>
                          <a href="#" class="btn">Read More</a>
@@ -187,21 +195,21 @@
                     <h2>Follow Me</h2>
                     <div class="links">
                         <a href="mailto:mohamedahmeeed002@gmail.com"><i class="fa-regular fa-envelope"></i>mohamedahmeeed002@gmail.com</a>
-                        <a href="tel:+201100181646"><i class="fa-solid fa-phone"></i>01100181646</a>
+                        <a href="https://wa.me/+201100181646"><i class="fa-solid fa-phone"></i>01100181646</a>
                         <a href="https://www.facebook.com/profile.php?id=100069693376084" target="_blank"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
                         <a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
                         <a href="#"><i class="fa-brands fa-square-instagram"></i>Instgram</a>
                     </div>
                 </div>
-                <form action="">
+                <form method="post" action="https://api.sheetmonkey.io/form/9jjzdng6PMfmXfgDFdGZhQ">
                     <div class="inpts_form">
-                        <input type="text" placeholder="Full Name">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Mobile Number">
-                        <input type="text" placeholder="Subject">
-                        <textarea name="" id="" rows="10" placeholder="Your Message Here-----"></textarea>
+                        <input type="text" placeholder="Full Name" name="Name" required>
+                        <input type="text" placeholder="Email" name="Email" required>
+                        <input type="text" placeholder="Mobile Number" name="phone">
+                        <input type="text" placeholder="Subject" name="Subject">
+                        <textarea name="message" id="" rows="10" placeholder="Your Message Here-----"></textarea>
                     </div>
-                    <button class="btn">Send Message</button>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
 
