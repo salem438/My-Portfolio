@@ -660,6 +660,7 @@ header .links .logo,
     /* ---- about ---- */
     .about .container {
          padding: 30px 20px;
+        
          }
     .about .div_text h2 {
          font-size: 30px; 
@@ -678,8 +679,13 @@ header .links .logo,
           font-size: 14px; 
           margin-bottom: 18px; 
         }
-    .about .div_img {
+    .about .div_img img {
          width: 80%; 
+         align-items: center;
+         justify-content: center;
+         display: block;
+         margin: 30px auto 0;
+         
         }
       .services .boxs .box{
         width: 100%;
@@ -732,4 +738,50 @@ header .links .logo,
             margin-bottom: 20px;
           }
 
+}
+
+/* About image alignment fix: centered below Download CV on mobile */
+@media (max-width: 1000px) {
+    .about .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .div_text {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about .div_img {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .div_img img {
+        display: block;
+        width: 80%;
+        max-width: 360px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .about .container {
+        padding: 30px 20px;
+    }
+
+    .about .div_img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about .div_img img {
+        width: 85%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
 }
